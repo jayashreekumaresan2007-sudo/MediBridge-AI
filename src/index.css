@@ -1,0 +1,165 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  min-height: 100%;
+  background: #f4f7fb;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+::selection {
+  background: #c9eeea;
+  color: #153d4a;
+}
+
+.login-screen {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background:
+    radial-gradient(ellipse at top left, #d9f4ef 0%, transparent 45%),
+    #f5f8fb;
+  color: #17313d;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 430px;
+  padding: 40px;
+  background: #fff;
+  border: 1px solid #e4ecef;
+  border-radius: 24px;
+  box-shadow: 0 24px 70px rgba(28, 58, 72, 0.10);
+}
+
+.login-brand-mark {
+  display: grid;
+  place-items: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 17px;
+  background: #dff6f0;
+  color: #087e72;
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.login-eyebrow {
+  margin: 24px 0 8px;
+  color: #078578;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.login-card h1 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.25;
+}
+
+.login-card h1 span {
+  color: #078578;
+}
+
+.login-description {
+  margin: 12px 0 28px;
+  color: #71818b;
+  line-height: 1.6;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.login-form label {
+  margin-top: 8px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.login-form input {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  border: 1px solid #dce6e9;
+  border-radius: 10px;
+  background: #fff;
+  color: #17313d;
+  font: inherit;
+  outline: none;
+}
+
+.login-form input:focus {
+  border-color: #078578;
+  box-shadow: 0 0 0 3px rgba(7, 133, 120, 0.12);
+}
+
+.login-form button {
+  min-height: 49px;
+  margin-top: 16px;
+  border: 0;
+  border-radius: 10px;
+  background: #087e72;
+  color: white;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.login-form button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.login-error {
+  margin: 8px 0 0;
+  color: #b42318;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.login-footer {
+  margin: 24px 0 0;
+  color: #7a8991;
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 28px 22px;
+  }
+
+  .login-card h1 {
+    font-size: 26px;
+  }
+}
