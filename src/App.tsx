@@ -4,7 +4,7 @@ import type { Session } from '@supabase/supabase-js';
 import './App.css';
 import './TruthGraph.css';
 import { supabase } from './lib/supabase';
-import Login from './Login';
+import Login from './login';
 
 type Patient = {
   id: number;
@@ -28,13 +28,7 @@ type Issue = {
   status: ReviewStatus;
 };
 
-const initialPatients: Patient[] = [
-  { id: 1, name: 'Olivia Bennett', age: 42, condition: 'Type 2 Diabetes', status: 'Active', risk: 'Medium', lastVisit: 'Oct 22, 2026' },
-  { id: 2, name: 'Ethan Carter', age: 58, condition: 'Hypertension', status: 'Monitoring', risk: 'High', lastVisit: 'Oct 21, 2026' },
-  { id: 3, name: 'Sophia Mitchell', age: 35, condition: 'Asthma', status: 'Active', risk: 'Low', lastVisit: 'Oct 20, 2026' },
-  { id: 4, name: 'Noah Williams', age: 67, condition: 'Cardiac follow-up', status: 'Active', risk: 'High', lastVisit: 'Oct 19, 2026' },
-  { id: 5, name: 'Ava Thompson', age: 29, condition: 'Migraine', status: 'Recovered', risk: 'Low', lastVisit: 'Oct 17, 2026' },
-];
+
 
 const navigation = [
   { label: 'Dashboard', icon: '▦' },
