@@ -1,75 +1,139 @@
-# React + TypeScript + Vite
+# 🏥 MediBridge AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Smart Healthcare Management Platform
 
-Currently, two official plugins are available:
+MediBridge AI is a healthcare-focused web application designed to simplify healthcare management through a modern, user-friendly digital experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🌐 **Live Demo:** [MediBridge AI](https://medi-bridge-ai-cj8k-is1htrpoe-jayu-projects.vercel.app/)
 
-## React Compiler
+📂 **GitHub Repository:** [MediBridge AI](https://github.com/jayashreekumaresan2007-sudo/MediBridge-AI)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 🏥 Healthcare-focused user interface
+- 🔐 Authentication integration with Supabase
+- 🗄️ Database integration for patient-related information
+- 🎨 Modern and responsive web interface
+- ⚡ Fast frontend development using Vite
+- 📱 Designed for an accessible digital experience
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+> Note: The exact availability of each feature depends on the current implementation of the application.
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## 🛠️ Tech Stack
 
+| Technology | Purpose |
+|---|---|
+| React | Building the user interface |
+| TypeScript | Type-safe application development |
+| Vite | Development server and build tool |
+| Supabase | Backend services and database |
+| Git & GitHub | Version control and source code hosting |
+| Vercel | Website deployment |
+
+---
+
+## 🌐 Live Demo
+
+Explore the deployed application:
+
+👉 https://medi-bridge-ai-cj8k-is1htrpoe-jayu-projects.vercel.app/
+
+---
+
+## 🚀 Getting Started
+
+Follow these steps to run MediBridge AI on your local machine.
+
+### Prerequisites
+
+Install the following:
+
+- Node.js
+- npm
+- Git
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/jayashreekumaresan2007-sudo/MediBridge-AI.git
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Navigate to the Project Folder
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+cd MediBridge-AI
 ```
+
+### 3. Install Dependencies
+
+```bash
+npm install
+```
+
+### 4. Configure Environment Variables
+
+Create a `.env` file in the project root directory.
+
+Add the following variables:
+
+```env
+VITE_SUPABASE_URL=your_supabase_project_url
+VITE_SUPABASE_PUBLISHABLE_KEY=your_supabase_publishable_key
+```
+
+Replace the placeholder values with your own Supabase project details.
+
+**Security:** Never commit your `.env` file or expose Supabase secret or service-role keys in frontend code.
+
+### 5. Start the Development Server
+
+```bash
+npm run dev
+```
+
+Open the local URL displayed in your terminal to view the application.
+
+### 6. Build for Production
+
+```bash
+npm run build
+```
+
+---
+
+## 🔐 Security
+
+- Environment variables are used for Supabase configuration.
+- Database access should be protected by appropriate Row Level Security (RLS) policies.
+- Never expose secret or service-role keys in client-side code.
+- Patient information should be handled responsibly and securely.
+
+---
+
+## 🎯 Project Goals
+
+MediBridge AI aims to explore how modern web technologies and backend services can support a more accessible and user-friendly healthcare management experience.
+
+---
+
+## 👩‍💻 Developer
+
+**Jayashree K**
+
+Computer Science & Engineering Student
+
+- GitHub: [@jayashreekumaresan2007-sudo](https://github.com/jayashreekumaresan2007-sudo)
+
+---
+
+## 📄 License
+
+This project is available for educational and portfolio purposes. A formal open-source license can be added if required.
+
+---
+
+⭐ If you find this project interesting, consider exploring the repository!
